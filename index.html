@@ -12,77 +12,143 @@
     <!-- MAIN CSS STYLES -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- SEARCH BAR ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
     <header id="top" class="site-header">
         <div class="site-id">
             <div class="logo">
-                <a href="index.html"><img src="img/steam-logo-black-transparent.png" alt="quick logo"></a>
+                <a href="index.html"><img src="img/steam-logo-black-transparent.png" alt="quick logo"></a>  
             </div>
             <h1><a href="#">STEAM</a></h1>
+            <div class="search-container">
+            <input type="text" placeholder='Find Your Game!'>
+            <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
         </div>
+        
         <nav class="site-nav" data-navstate="closed">
-            <h2 class="menu-button">
-                <span class="hide-visually">Menu</span>
-                <svg width="30" height="30"> 
-                    <title>Menu</title>
-                    <rect id="menubar-top" y="0" width="30" height="3"></rect>
-                    <rect id="menubar-middle" y="8" width="30" height="3"></rect>
-                    <rect id="menubar-bottom" y="16" width="30" height="3"></rect>
-                </svg>
-            </h2>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="subpage.html">Subpage</a></li>
-            </ul>
+            <div class="menu-button">
+                <ul>
+                <li><a href="subpage.html">NEW & NOTEWORTHY</a></li>
+                <li><a href="subpage.html">CATEGORIES</a></li>
+                <li><a href="subpage.html">CART</a></li>
+                <li><a href="subpage.html">SIGN IN</a></li>
+                </ul>
+            </h4>
         </nav>
+        
     </header>
 
     <main class="site-main">
-
+            <h4>for space</h4>
         <section class="hero animate-on-scroll">
-            <div class="container">
-                <h1>Steam v1</h1>
-                <p>This is a Steam Store Redesign Website for the ART 258 final project, built with SASS.</p>
-                <a href="#section01" class="button">Go to Section 1</a>
-                <a href="#section02" class="button">Go to Section 2</a>
-                <a href="#section03" class="button">Go to Section 3</a>
-            </div>
+            <h1 class="h1-1">DISCO ELYSIUM</h1>
+            <h1 class="h1-2">DISCO ELYSIUM</h1>
+                <img class="left" src="img/left man.png" alt="hero man animation">
+                <h3 class="middle">THE FINAL</h3>
+                <h3 class="mid">THE FINAL</h3>
+                <img class="right" src="img/right man.png" alt="hero man animation">
         </section>
+            <h2 class="target">DISCO ELYSIUM >> DISCO ELYSIUM >> DISCO ELYSIUM >> DISCO ELYSIUM >> DISCO ELYSIUM >> </h2>
 
 
-        <section id="section01" class="animate-on-scroll">
-
+        <section id="specialoffers" class="animate-on-scroll">
+            <div class="container">
+                <h1>SPECIAL OFFERS</h1>
+            </div>
             <div class="container">
                 <div class="row">
-                    <div class="one-half">
-                        <img src="https://via.placeholder.com/1600x1200" alt="placeholder">
+                    <div class="column-special">         
+                        <img src="img/haven special offers.png" alt="special offers image">
+                        <div class="insidecolumn">
+                            <h1>Haven</h1>
+                            <div class="plus">
+                            </div>
+                        </div>
+                        <p>$49.99</p>
+                        <a href="#" class="salebutton">-50%</a>
+                        <a href="#" class="pricebutton">$24.99</a>
                     </div>
-                    <div class="one-half">
-                        <h3>Heading3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur atque voluptatem totam commodi voluptatum, inventore repudiandae reiciendis, rerum eligendi fugiat nihil quo, molestias laudantium iusto labore voluptates nisi asperiores.</p>
-                        <a href="#" class="button">button</a>
+                    <div class="column-special">         
+                        <img src="img/days gone special offers.png" alt="special offers image">
+                        <div class="insidecolumn">
+                            <h1>Days Gone</h1>
+                            <div class="plus">
+                            </div>
+                        </div>
+                        <p>$49.99</p>
+                        <a href="#" class="salebutton">-50%</a>
+                        <a href="#" class="pricebutton">$24.99</a>
                     </div>
                 </div>
-
             </div>
-
         </section>
 
-        <section id="section02" class="animate-on-scroll">
+        <section id="NewandTrending" class="animate-on-scroll">
             <div class="container">
-                <div class="row swapped">
-                    <div class="one-half">
-                        <img class="animate-scale-in" src="https://via.placeholder.com/1600x1200" alt="placeholder">
-                    </div>
-                    <div class="one-half animate-drop-in-with-delay">
-                        <h3>Heading3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus conse ctetur atque voluptatem totam commodi voluptatum, inventore repudiandae reiciendis, rerum eligendi fugiat nihil quo, molestias laudantium iusto labore voluptates nisi asperiores.</p>
-                        <a href="#" class="button">button</a>
-                    </div>
+                <div class="title">
+                    <h1><mark>New and Trending</mark></h1>
+                    <a href="#"><img src="img/new and trending arrow.png" alt="arrow icon"></a>
                 </div>
             </div>
+                <div class="row">
+                    <div class="column-new">
+                        <img src="img/NT rogue Lords.png" alt="NT image">
+                        <div class="insidecolumn">
+                            <h3>Rogue Lords</h3>
+                            <div class="plus">
+                            </div>
+                        </div>
+                        <p class="line">$24.99</p>
+                        <div class="rate">
+                            <p>8.8 / 10</p>
+                            <a href="#" class="pricebutton">$19.99</a>
+                        </div>
+                    </div>
+                    <div class="column-new">
+                        <img src="img/NT rogue Lords.png" alt="NT image">
+                        <div class="insidecolumn">
+                            <h3>Rogue Lords</h3>
+                            <div class="plus">
+                            </div>
+                        </div>
+                        <p class="line">$24.99</p>
+                        <div class="rate">
+                            <p>8.8 / 10</p>
+                            <a href="#" class="pricebutton">$19.99</a>
+                        </div>
+                    </div>
+                    <div class="column-new">
+                        <img src="img/NT rogue Lords.png" alt="NT image">
+                        <div class="insidecolumn">
+                            <h3>Rogue Lords</h3>
+                            <div class="plus">
+                            </div>
+                        </div>
+                        <p class="line">$24.99</p>
+                        <div class="rate">
+                            <p>8.8 / 10</p>
+                            <a href="#" class="pricebutton">$19.99</a>
+                        </div>
+                    </div>
+                    <div class="column-new">
+                        <img src="img/NT rogue Lords.png" alt="NT image">
+                        <div class="insidecolumn">
+                            <h3>Rogue Lords</h3>
+                            <div class="plus">
+                            </div>
+                        </div>
+                        <p class="line">$24.99</p>
+                        <div class="rate">
+                            <p>8.8 / 10</p>
+                            <a href="#" class="pricebutton">$19.99</a>
+                        </div>
+                    </div>
+                
         </section>
 
         <section id="section03" class="animate-on-scroll">

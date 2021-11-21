@@ -2,18 +2,20 @@
 /* GLOBAL RESETS */
 * { box-sizing: border-box;}
 
+
 //VARIABLES
 $color-text-body: rgba(0,0,0,.8);
 $color-text-headings: rgba(0,0,0,1);
-$color-accent: rgb(255, 196, 0);
-$color-link: rgb(163, 201, 25);
-$color-link-darker: rgb(124, 150, 32);
-$color-accent-light: rgb(255, 211, 145);
+$color-accent: #46F6F6;
+$color-link: #56CBFF;
+$color-link-darker: #FF9F21;
+$color-accent-light: #fa5204;
 
 $color-lightgrey: rgba(0,0,0,.5);
 
 $font-family-sans: 'Proxima Nova', Helvetica, Arial, Helvetica, sans-serif;
 $font-family-serif: 'Condor', Georgia, 'Times New Roman', Times, serif;
+$font-family-number: 'Nimbus Sans', Helvetica, Arial, Helvetica, sans-serif;
 
 // BREAKPOINTS
 $breakpoint-small: 768px;

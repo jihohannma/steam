@@ -1,13 +1,14 @@
 /* SEMANTIC GRID */
 
-$gridgap: 2%;
+$gridgap: 4%;
 
 .row {
+    width: 100%;
+    max-width: 30000px;
     display: flex;
-    flex-wrap: wrap;
     margin-left: -($gridgap / 2);
     margin-right: -($gridgap / 2);
-    align-items: center;
+    justify-content: center;
     margin-bottom: 3em;
 
     > * {
@@ -45,7 +46,98 @@ $gridgap: 2%;
 
     }
 }
-    
+
+// FOR SPECIAL OFFERS DESIGN
+#specialoffers {
+    text-align: center;
+}
+
+.column-special {
+    padding: 2em;
+    border-radius: 2em;
+    box-shadow: 0 0 4px 4px rgb(0,0,0,.05);
+    text-align: right;
+
+    h1{
+        font-family: $font-family-sans;
+        margin-top: 10px;
+        font-size: 3em;
+    }
+    p {
+        font-family: $font-family-number;
+        font-weight: bold;
+        font-size: 1.3em;
+        text-decoration: line-through;
+        margin-bottom: 0;
+        margin-right: .5em;
+    }
+    .insidecolumn {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+// FOR TITLE PARTS SPACE BETWEEN
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        mark {
+            display: inline-block;
+            line-height: 0em;
+            padding-bottom: 0.5em;
+            background-color: $color-link;
+          }
+    }
+}
+
+// FOR NEW AND TRENDING DESIGN
+
+// .row-middle {
+//     width: 120%;
+//     max-width: 30000px;
+//     display: flex;
+//     margin-left: -($gridgap / 2);
+//     margin-right: -($gridgap / 2);
+//     justify-content: center;
+//     margin-bottom: 3em;
+// }
+
+.column-new {
+    padding: 2em;
+    text-align: right;
+
+    h3{
+        font-family: $font-family-sans;
+        margin-top: 10px;
+        font-size: 1.8em;
+    }
+    p {
+        font-family: $font-family-number;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    .line {
+        font-family: $font-family-number;
+        font-weight: bold;
+        font-size: 1.3em;
+        text-decoration: line-through;
+        margin-bottom: 0;
+        margin-right: .5em;
+    }
+    .insidecolumn {
+        display: flex;
+        justify-content: space-between;
+    }
+    .rate {
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}    
 
 
 // FOR DEMO PURPOSES ONLY
