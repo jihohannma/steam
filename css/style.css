@@ -190,6 +190,8 @@ img {
 /* RESET BODY */
 body {
   margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* CONTAINER */
@@ -198,7 +200,12 @@ body {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 1em;
+  padding: 0;
+}
+
+.container-middle {
+  max-width: 2000px;
+  width: 110%;
 }
 
 /* MEDIA QUERIES */
@@ -220,7 +227,7 @@ body {
 /* SEMANTIC GRID */
 .row {
   width: 100%;
-  max-width: 30000px;
+  max-width: 5000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,6 +308,7 @@ body {
 
 #specialoffers {
   text-align: center;
+  margin-top: 6em;
 }
 
 .column-special {
@@ -351,6 +359,8 @@ body {
 .column-new {
   padding: 2em;
   text-align: right;
+  margin-left: 0;
+  margin-right: 0;
 }
 .column-new h3 {
   font-family: "Proxima Nova", Helvetica, Arial, Helvetica, sans-serif;
@@ -367,7 +377,7 @@ body {
   font-weight: bold;
   font-size: 1.3em;
   text-decoration: line-through;
-  margin-bottom: 0;
+  margin-top: 1em;
   margin-right: 0.5em;
 }
 .column-new .insidecolumn {
@@ -389,6 +399,97 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+.column-new .pricebutton {
+  margin-top: 0;
+  padding: 0.3em 1em;
+}
+.column-new .sticker {
+  position: absolute;
+  top: 90px;
+  border-radius: 2em;
+  padding: 0.5em;
+  margin-left: 0.6em;
+  line-height: 1.2;
+  background: -webkit-gradient(linear, left top, right bottom, from(#46F6F6), to(#56CBFF));
+  background: linear-gradient(to bottom right, #46F6F6, #56CBFF);
+  opacity: 80%;
+  text-align: center;
+  font-family: "Condor", Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+#TopSellers {
+  padding: 3em 0;
+}
+#TopSellers mark {
+  background-color: #46F6F6;
+}
+
+#black {
+  background-color: black;
+}
+#black h2 {
+  color: white;
+}
+#black .PU {
+  background-color: white;
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 980px;
+}
+#black .PU .sidetext {
+  padding-left: 1em;
+}
+#black .PU .sidetext h3 {
+  font-family: "Proxima Nova", Helvetica, Arial, Helvetica, sans-serif;
+}
+#black .PU .sidetext h4 {
+  font-family: "Nimbus Sans", Helvetica, Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+#black .row {
+  width: 100%;
+}
+#black .last {
+  margin-top: 8em;
+}
+#black .last .column-last {
+  position: inline-block;
+}
+#black .last .column-last .rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#black .last .column-last .rate .salebutton {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 0.3em 1em;
+  margin: 0;
+}
+#black .last .column-last .rate .pricebutton {
+  background: none;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+#black .last .column-last .rate p {
+  color: white;
+  text-decoration: line-through;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-top: 0.5em;
 }
 
 .demo .row {
@@ -466,11 +567,13 @@ section {
 }
 
 /* HERO SECTION */
-.site-main h4 {
-  background: black;
-  margin: 0;
+.target-top {
+  color: black;
+  background-color: black;
+  margin-bottom: 0;
 }
-.site-main h2 {
+
+.target {
   color: white;
   background-color: black;
   padding: 0.5em 0;

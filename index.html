@@ -9,11 +9,15 @@
     <!-- ADOBE FONTS -->
     <link rel="stylesheet" href="https://use.typekit.net/ebo4gar.css">
 
+    <!-- FOR SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
     <!-- MAIN CSS STYLES -->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- SEARCH BAR ICON -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 <body>
@@ -33,10 +37,10 @@
         <nav class="site-nav" data-navstate="closed">
             <div class="menu-button">
                 <ul>
-                <li><a href="subpage.html">NEW & NOTEWORTHY</a></li>
-                <li><a href="subpage.html">CATEGORIES</a></li>
-                <li><a href="subpage.html">CART</a></li>
-                <li><a href="subpage.html">SIGN IN</a></li>
+                <li><a href="#">NEW & NOTEWORTHY</a></li>
+                <li><a href="#">CATEGORIES</a></li>
+                <li><a href="#">CART</a></li>
+                <li><a href="#">SIGN IN</a></li>
                 </ul>
             </h4>
         </nav>
@@ -44,7 +48,7 @@
     </header>
 
     <main class="site-main">
-            <h4>for space</h4>
+            <h4 class="target-top">for space</h4>
         <section class="hero animate-on-scroll">
             <h1 class="h1-1">DISCO ELYSIUM</h1>
             <h1 class="h1-2">DISCO ELYSIUM</h1>
@@ -61,28 +65,94 @@
                 <h1>SPECIAL OFFERS</h1>
             </div>
             <div class="container">
-                <div class="row">
-                    <div class="column-special">         
-                        <img src="img/haven special offers.png" alt="special offers image">
-                        <div class="insidecolumn">
-                            <h1>Haven</h1>
-                            <div class="plus">
+                <div class="swiper-container" >
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+
+                            <div class="row">
+                                <div class="column-special">         
+                                    <img src="img/haven special offers.png" alt="special offers image">
+                                    <div class="insidecolumn">
+                                        <h1>Haven</h1>
+                                        <div class="plus">
+                                        </div>
+                                    </div>
+                                    <p>$49.99</p>
+                                    <a href="#" class="salebutton">-50%</a>
+                                    <a href="#" class="pricebutton">$24.99</a>
+                                </div>
+                                <div class="column-special">         
+                                    <img src="img/days gone special offers.png" alt="special offers image">
+                                    <div class="insidecolumn">
+                                        <h1>Days Gone</h1>
+                                        <div class="plus">
+                                        </div>
+                                    </div>
+                                    <p>$49.99</p>
+                                    <a href="#" class="salebutton">-50%</a>
+                                    <a href="#" class="pricebutton">$24.99</a>
+                                </div>
                             </div>
                         </div>
-                        <p>$49.99</p>
-                        <a href="#" class="salebutton">-50%</a>
-                        <a href="#" class="pricebutton">$24.99</a>
-                    </div>
-                    <div class="column-special">         
-                        <img src="img/days gone special offers.png" alt="special offers image">
-                        <div class="insidecolumn">
-                            <h1>Days Gone</h1>
-                            <div class="plus">
+
+                        <!-- SWIPER 2 -->
+                        <div class="swiper-slide">
+
+                            <div class="row">
+                                <div class="column-special">         
+                                    <img src="img/dead estate.png" alt="special offers image">
+                                    <div class="insidecolumn">
+                                        <h1>Dead Estate</h1>
+                                        <div class="plus">
+                                        </div>
+                                    </div>
+                                    <p>$49.99</p>
+                                    <a href="#" class="salebutton">-50%</a>
+                                    <a href="#" class="pricebutton">$24.99</a>
+                                </div>
+                                <div class="column-special">         
+                                    <img src="img/resident evil 3.png" alt="special offers image">
+                                    <div class="insidecolumn">
+                                        <h1>Resident Evil 3</h1>
+                                        <div class="plus">
+                                        </div>
+                                    </div>
+                                    <p>$49.99</p>
+                                    <a href="#" class="salebutton">-50%</a>
+                                    <a href="#" class="pricebutton">$24.99</a>
+                                </div>
                             </div>
                         </div>
-                        <p>$49.99</p>
-                        <a href="#" class="salebutton">-50%</a>
-                        <a href="#" class="pricebutton">$24.99</a>
+
+                        <!-- SWIPER 3 -->
+                        <div class="swiper-slide">
+
+                            <div class="row">
+                                <div class="column-special">         
+                                    <img src="img/haven special offers.png" alt="special offers image">
+                                    <div class="insidecolumn">
+                                        <h1>Haven</h1>
+                                        <div class="plus">
+                                        </div>
+                                    </div>
+                                    <p>$49.99</p>
+                                    <a href="#" class="salebutton">-50%</a>
+                                    <a href="#" class="pricebutton">$24.99</a>
+                                </div>
+                                <div class="column-special">         
+                                    <img src="img/days gone special offers.png" alt="special offers image">
+                                    <div class="insidecolumn">
+                                        <h1>Days Gone</h1>
+                                        <div class="plus">
+                                        </div>
+                                    </div>
+                                    <p>$49.99</p>
+                                    <a href="#" class="salebutton">-50%</a>
+                                    <a href="#" class="pricebutton">$24.99</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
                     </div>
                 </div>
             </div>
@@ -95,72 +165,251 @@
                     <a href="#"><img src="img/new and trending arrow.png" alt="arrow icon"></a>
                 </div>
             </div>
-                <div class="row">
-                    <div class="column-new">
-                        <img src="img/NT rogue Lords.png" alt="NT image">
-                        <div class="insidecolumn">
-                            <h3>Rogue Lords</h3>
-                            <div class="plus">
-                            </div>
+            <div class="container-middle">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="column-new">
+                                        <a href="#"><img src="img/NT rogue Lords.png" alt="NT image"></a>
+                                        <p class="sticker">30%<br>OFF</p>
+                                        <div class="insidecolumn">
+                                            <h3>Rogue Lords</h3>
+                                            <div class="plus">
+                                            </div>
+                                        </div>
+                                        <p class="line">$24.99</p>
+                                        <div class="rate">
+                                            <p>8.8 / 10</p>
+                                            <a href="#" class="pricebutton">$19.99</a>
+                                        </div>
+                                    </div>
+                                    <div class="column-new">
+                                        <a href="#"><img src="img/NT rogue Lords.png" alt="NT image"></a>
+                                        <p class="sticker">30%<br>OFF</p>
+                                        <div class="insidecolumn">
+                                            <h3>Rogue Lords</h3>
+                                            <div class="plus">
+                                            </div>
+                                        </div>
+                                        <p class="line">$24.99</p>
+                                        <div class="rate">
+                                            <p>8.8 / 10</p>
+                                            <a href="#" class="pricebutton">$19.99</a>
+                                        </div>
+                                    </div>
+                                    <div class="column-new">
+                                        <a href="#"><img src="img/NT rogue Lords.png" alt="NT image"></a>
+                                        <p class="sticker">30%<br>OFF</p>
+                                        <div class="insidecolumn">
+                                            <h3>Rogue Lords</h3>
+                                            <div class="plus">
+                                            </div>
+                                        </div>
+                                        <p class="line">$24.99</p>
+                                        <div class="rate">
+                                            <p>8.8 / 10</p>
+                                            <a href="#" class="pricebutton">$19.99</a>
+                                        </div>
+                                    </div>
+                                    <div class="column-new">
+                                        <a href="#"><img src="img/NT rogue Lords.png" alt="NT image"></a>
+                                        <p class="sticker">30%<br>OFF</p>
+                                        <div class="insidecolumn">
+                                            <h3>Rogue Lords</h3>
+                                            <div class="plus">
+                                            </div>
+                                        </div>
+                                        <p class="line">$24.99</p>
+                                        <div class="rate">
+                                            <p>8.8 / 10</p>
+                                            <a href="#" class="pricebutton">$19.99</a>
+                                        </div>
+                                    </div>
+                                    <div class="column-new">
+                                        <a href="#"><img src="img/NT rogue Lords.png" alt="NT image"></a>
+                                        <p class="sticker">30%<br>OFF</p>
+                                        <div class="insidecolumn">
+                                            <h3>Rogue Lords</h3>
+                                            <div class="plus">
+                                            </div>
+                                        </div>
+                                        <p class="line">$24.99</p>
+                                        <div class="rate">
+                                            <p>8.8 / 10</p>
+                                            <a href="#" class="pricebutton">$19.99</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
                         </div>
-                        <p class="line">$24.99</p>
-                        <div class="rate">
-                            <p>8.8 / 10</p>
-                            <a href="#" class="pricebutton">$19.99</a>
-                        </div>
+                        <div class="swiper-scrollbar"></div>
                     </div>
-                    <div class="column-new">
-                        <img src="img/NT rogue Lords.png" alt="NT image">
-                        <div class="insidecolumn">
-                            <h3>Rogue Lords</h3>
-                            <div class="plus">
-                            </div>
-                        </div>
-                        <p class="line">$24.99</p>
-                        <div class="rate">
-                            <p>8.8 / 10</p>
-                            <a href="#" class="pricebutton">$19.99</a>
-                        </div>
-                    </div>
-                    <div class="column-new">
-                        <img src="img/NT rogue Lords.png" alt="NT image">
-                        <div class="insidecolumn">
-                            <h3>Rogue Lords</h3>
-                            <div class="plus">
-                            </div>
-                        </div>
-                        <p class="line">$24.99</p>
-                        <div class="rate">
-                            <p>8.8 / 10</p>
-                            <a href="#" class="pricebutton">$19.99</a>
-                        </div>
-                    </div>
-                    <div class="column-new">
-                        <img src="img/NT rogue Lords.png" alt="NT image">
-                        <div class="insidecolumn">
-                            <h3>Rogue Lords</h3>
-                            <div class="plus">
-                            </div>
-                        </div>
-                        <p class="line">$24.99</p>
-                        <div class="rate">
-                            <p>8.8 / 10</p>
-                            <a href="#" class="pricebutton">$19.99</a>
-                        </div>
-                    </div>
-                
+                </div> 
+            </div>        
         </section>
 
-        <section id="section03" class="animate-on-scroll">
+        <section id="TopSellers" class="animate-on-scroll">
             <div class="container">
-                <div class="row stacked">
-                    <div class="one-half animate-scale-in">
-                        <img src="https://via.placeholder.com/1600x1200" alt="placeholder">
+                <div class="title">
+                    <h1><mark>Top Sellers</mark></h1>
+                    <a href="#"><img src="img/top sellers arrow.png" alt="arrow icon"></a>
+                </div>
+            </div>
+            <div class="container-middle">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="column-new">
+                                        <a href="#"><img src="img/NT rogue Lords.png" alt="NT image"></a>
+                                        <p class="sticker">30%<br>OFF</p>
+                                        <div class="insidecolumn">
+                                            <h3>Rogue Lords</h3>
+                                            <div class="plus">
+                                            </div>
+                                        </div>
+                                        <p class="line">$24.99</p>
+                                        <div class="rate">
+                                            <p>8.8 / 10</p>
+                                            <a href="#" class="pricebutton">$19.99</a>
+                                        </div>
+                                    </div>
+                                    <div class="column-new">
+                                        <a href="#"><img src="img/NT rogue Lords.png" alt="NT image"></a>
+                                        <p class="sticker">30%<br>OFF</p>
+                                        <div class="insidecolumn">
+                                            <h3>Rogue Lords</h3>
+                                            <div class="plus">
+                                            </div>
+                                        </div>
+                                        <p class="line">$24.99</p>
+                                        <div class="rate">
+                                            <p>8.8 / 10</p>
+                                            <a href="#" class="pricebutton">$19.99</a>
+                                        </div>
+                                    </div>
+                                    <div class="column-new">
+                                        <a href="#"><img src="img/NT rogue Lords.png" alt="NT image"></a>
+                                        <p class="sticker">30%<br>OFF</p>
+                                        <div class="insidecolumn">
+                                            <h3>Rogue Lords</h3>
+                                            <div class="plus">
+                                            </div>
+                                        </div>
+                                        <p class="line">$24.99</p>
+                                        <div class="rate">
+                                            <p>8.8 / 10</p>
+                                            <a href="#" class="pricebutton">$19.99</a>
+                                        </div>
+                                    </div>
+                                    <div class="column-new">
+                                        <a href="#"><img src="img/NT rogue Lords.png" alt="NT image"></a>
+                                        <p class="sticker">30%<br>OFF</p>
+                                        <div class="insidecolumn">
+                                            <h3>Rogue Lords</h3>
+                                            <div class="plus">
+                                            </div>
+                                        </div>
+                                        <p class="line">$24.99</p>
+                                        <div class="rate">
+                                            <p>8.8 / 10</p>
+                                            <a href="#" class="pricebutton">$19.99</a>
+                                        </div>
+                                    </div>
+                                    <div class="column-new">
+                                        <a href="#"><img src="img/NT rogue Lords.png" alt="NT image"></a>
+                                        <p class="sticker">30%<br>OFF</p>
+                                        <div class="insidecolumn">
+                                            <h3>Rogue Lords</h3>
+                                            <div class="plus">
+                                            </div>
+                                        </div>
+                                        <p class="line">$24.99</p>
+                                        <div class="rate">
+                                            <p>8.8 / 10</p>
+                                            <a href="#" class="pricebutton">$19.99</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        <div class="swiper-scrollbar"></div>
                     </div>
-                    <div class="one-half animate-slide-up">
-                        <h3>Heading3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur atque voluptatem totam commodi voluptatum, inventore repudiandae reiciendis, rerum eligendi fugiat nihil quo, molestias laudantium iusto labore voluptates nisi asperiores.</p>
-                        <a href="#" class="button animate-scale-in">button</a>
+                </div> 
+            </div>        
+        </section>
+
+        <section id="black" class="animate-on-scroll">
+            <div class="container">
+                <div class="title">
+                    <h2>Popular Upcoming</h2>
+                    <a href="#"><img src="img/top sellers arrow.png" alt="arrow icon"></a>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="PU">
+                                    <img src="img/PU Astria Ascending-1.png" alt="Game image">
+                                    <div class="sidetext">
+                                        <h3>Astria Ascending</h3>
+                                        <h4>October 1 2021</h4>
+                                        <p>Explore a vast world on the brink of chaos in a mature, emotional JRPG. Experience an epic story  with rewarding, turn-based combat and expansive customization rendered in glorious 4K hand-drawn visuals.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SWIPER 2 -->
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="PU">
+                                    <img src="img/PU Industria.png" alt="Game image">
+                                    <div class="sidetext">
+                                        <h3>Industria</h3>
+                                        <h4>October 1 2021</h4>
+                                        <p>INDUSTRIA is a first-person shooter that takes you from East Berlin into a parallel reality, shortly before the end of the Cold War. On the search for a missing work colleague, you decypher a dark past in a mysterious parallel dimension.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+                <div class="container last">
+                    <div class="title">
+                        <h2>Under $10</h2>
+                        <a href="#"><img src="img/top sellers arrow.png" alt="arrow icon"></a>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="column-last">
+                                <a href="#"><img src="img/under 1.png" alt="Under image"></a>
+                                <div class="rate">
+                                    <a href="#" class="salebutton">-85%</a>
+                                    <p class="line">$50.00</p>
+                                    <a href="#" class="pricebutton">$19.99</a>
+                                </div>
+                            </div>
+                            <div class="column-last">
+                                <a href="#"><img src="img/under 1.png" alt="Under image"></a>
+                                <div class="rate">
+                                    <a href="#" class="salebutton">-85%</a>
+                                    <p class="line">$50.00</p>
+                                    <a href="#" class="pricebutton">$19.99</a>
+                                </div>
+                            </div>
+                            <div class="column-last">
+                                <a href="#"><img src="img/under 1.png" alt="Under image"></a>
+                                <div class="rate">
+                                    <a href="#" class="salebutton">-85%</a>
+                                    <p class="line">$50.00</p>
+                                    <a href="#" class="pricebutton">$19.99</a>
+                                </div>
+                            </div>
+                    
+                        </div>
                     </div>
                 </div>
             </div>
@@ -175,6 +424,39 @@
             </ul>
         </nav>
     </footer>
+
+
+    <!-- FOR SWIPER.JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+
+        const swiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
+            width: 50,
+        },
+        });
+
+    </script>
+
 
 
     <!-- SMOOTH SCROLL BY CHRIS FERDINANDI https://github.com/cferdinandi/smooth-scroll -->
