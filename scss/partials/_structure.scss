@@ -26,10 +26,17 @@
     }
 
     .logo {
-        max-width: 50px;
+        // max-width: 150px;
         margin-right: .5em;
         display: flex;
+        align-items: center;
+
+        img {
+            max-width: 50px;
+            margin-right: 1em;
+        }
     }
+
 
 }
 
@@ -71,7 +78,7 @@ section {
 
 
 .hero {
-    background-image: url(../../img/hero.png);
+    background-image: url(../img/hero.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;

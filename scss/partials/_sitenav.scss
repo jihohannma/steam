@@ -10,16 +10,13 @@
 .site-id {
     justify-content: space-between;
 
-    h1 {
-        float: left;
-    }
-
     input[type=text] {
         padding: .5em;
         margin: .5em 1em;
         border: none;
         border-bottom: solid 1.5px black;
         font-size: 17px;  
+
     }
 
     button {
