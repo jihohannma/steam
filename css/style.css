@@ -227,7 +227,6 @@ body {
 /* SEMANTIC GRID */
 .row {
   width: 100%;
-  max-width: 5000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
