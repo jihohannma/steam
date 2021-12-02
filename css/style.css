@@ -205,7 +205,7 @@ body {
 
 .container-middle {
   max-width: 2000px;
-  width: 110%;
+  width: 100%;
 }
 
 /* MEDIA QUERIES */
@@ -360,6 +360,7 @@ body {
   text-align: right;
   margin-left: 0;
   margin-right: 0;
+  width: 450px;
 }
 .column-new h3 {
   font-family: "Proxima Nova", Helvetica, Arial, Helvetica, sans-serif;
