@@ -21,13 +21,13 @@
 
 </head>
 
-<style>
+<!-- <style>
     .swiper-scrollbar {
         background: linear-gradient(to bottom right, #46F6F6, #56CBFF);
         height: 10px;
         width: 50%;
     }
-</style>
+</style> -->
 
 <body>
 
@@ -192,7 +192,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-scrollbar"></div>
+                    <div class="swiper-scrollbar scrollbar-so"></div>
                 </div>
             </div>
             </div>
@@ -482,7 +482,7 @@
 
     <script>
 
-        const swiper = new Swiper('.myswiper1 .swiper-container', {
+        const swiper1 = new Swiper('.myswiper1 .swiper-container', {
         // Optional parameters
         loop: true,
 
@@ -504,15 +504,10 @@
             width: 3,
             dragSize: 150,
             // hide: true,
-        
         },
         });
 
-    </script>
-
-    <script>
-
-        const swiper = new Swiper('.myswiper2 .swiper-container', {
+        const swiper2 = new Swiper('.myswiper2 .swiper-container', {
         // Optional parameters
         loop: true,
         autoplay: { delay: 2000,

@@ -13,3 +13,9 @@
 .swiper-button-prev::after {
   display: none;
 }
+
+.swiper-scrollbar.scrollbar-so {
+  height: 10px;
+  transform: scaleX(.5);
+  background-image: linear-gradient(to bottom right, #46F6F6, #56CBFF);
+}

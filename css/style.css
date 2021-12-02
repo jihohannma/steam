@@ -908,3 +908,27 @@ section {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-scrollbar.scrollbar-so {
+  height: 10px;
+  -webkit-transform: scaleX(0.5);
+          transform: scaleX(0.5);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#46F6F6), to(#56CBFF));
+  background-image: linear-gradient(to bottom right, #46F6F6, #56CBFF);
+}
