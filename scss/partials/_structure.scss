@@ -109,6 +109,21 @@ section {
     p {
         margin: 2em auto;
     }
+    h3 {
+        font-style: italic;
+        font-weight: lighter;
+        font-size: 58px;
+        z-index: 1;
+    }
+    h4 {
+        background: rgba(255, 153, 0, 0.562);
+        display: inline-block;
+        position: absolute;
+        font-size: 58px;
+        color: rgba(255, 153, 0, 0);
+        width: 100%;
+        top: 560px;
+    }
 
     // IMAGE
         .left {
@@ -124,14 +139,14 @@ section {
         .middle {
             color: white;
             position: absolute;
-            left: 200px;
+            left: 800px;
             top: 570px;
-            z-index: 1;
+            z-index: 2;
         }
         .mid {
             color: $color-accent-light;
             position: absolute;
-            left: 203px;
+            left: 803px;
             top: 570px;
         }
 

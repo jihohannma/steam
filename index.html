@@ -62,8 +62,9 @@
             <h1 class="h1-1 animate-slide-side">DISCO ELYSIUM</h1>
             <h1 class="h1-2 animate-slide-side-under">DISCO ELYSIUM</h1>
                 <img class="left animate-scale-in" src="img/left man.png" alt="hero man animation">
-                <h3 class="middle">THE FINAL</h3>
-                <h3 class="mid">THE FINAL</h3>
+                <h3 class="middle animate-slide-h3">THE FINAL</h3>
+                <h3 class="mid animate-slide-h3-under">THE FINAL</h3>
+                <h4 class="animate-slide-box">hello world</h4>
                 <img class="right animate-scale-in-right" src="img/right man.png" alt="hero man animation">
         </section>
             <!-- <marquee class="target" direction="right">DISCO ELYSIUM >> DISCO ELYSIUM >> DISCO ELYSIUM >> DISCO ELYSIUM >> DISCO ELYSIUM >></marquee> -->
@@ -285,7 +286,7 @@
                             
                         </div>
                     </div>
-                    <div class="swiper-scrollbar"></div>
+                    <div class="swiper-scrollbar scroll-mid"></div>
                 </div> 
                 </div>
             </div>        
@@ -378,50 +379,54 @@
                             
                         </div>
                     </div>
-                    <div class="swiper-scrollbar"></div>
+                    <div class="swiper-scrollbar scroll-mid"></div>
                 </div> 
                 </div>
             </div>        
         </section>
 
-        <!-- <section id="black" class="animate-on-scroll">
+        <section id="black" class="animate-on-scroll">
             <div class="container">
                 <div class="title">
                     <h2>Popular Upcoming</h2>
                     <a href="#"><img src="img/top sellers arrow.png" alt="arrow icon"></a>
                 </div>
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="container">
-                                <div class="PU">
-                                    <img src="img/PU Astria Ascending-1.png" alt="Game image">
-                                    <div class="sidetext">
-                                        <h3>Astria Ascending</h3>
-                                        <h4>October 1 2021</h4>
-                                        <p>Explore a vast world on the brink of chaos in a mature, emotional JRPG. Experience an epic story  with rewarding, turn-based combat and expansive customization rendered in glorious 4K hand-drawn visuals.</p>
+                <div class="container-bot">
+                    <div class="swiper myswiper1">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <!-- SLIDE 1 -->
+                                <div class="swiper-slide">
+                                    <div class="container">
+                                        <div class="PU">
+                                            <img src="img/PU Astria Ascending-1.png" alt="Game image">
+                                            <div class="sidetext">
+                                                <h3>Astria Ascending</h3>
+                                                <h4>October 1 2021</h4>
+                                                <p>Explore a vast world on the brink of chaos in a mature, emotional JRPG. Experience an epic story  with rewarding, turn-based combat and expansive customization rendered in glorious 4K hand-drawn visuals.</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        
-                        <div class="swiper-slide">
-                            <div class="container">
-                                <div class="PU">
-                                    <img src="img/PU Industria.png" alt="Game image">
-                                    <div class="sidetext">
-                                        <h3>Industria</h3>
-                                        <h4>October 1 2021</h4>
-                                        <p>INDUSTRIA is a first-person shooter that takes you from East Berlin into a parallel reality, shortly before the end of the Cold War. On the search for a missing work colleague, you decypher a dark past in a mysterious parallel dimension.</p>
+                                <!-- SLIDE 2 -->
+                                <div class="swiper-slide">
+                                    <div class="container">
+                                        <div class="PU">
+                                            <img src="img/PU Industria.png" alt="Game image">
+                                            <div class="sidetext">
+                                                <h3>Industria</h3>
+                                                <h4>October 1 2021</h4>
+                                                <p>INDUSTRIA is a first-person shooter that takes you from East Berlin into a parallel reality, shortly before the end of the Cold War. On the search for a missing work colleague, you decypher a dark past in a mysterious parallel dimension.</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="swiper-scrollbar"></div>
                             </div>
                         </div>
-                        <div class="swiper-scrollbar"></div>
                     </div>
                 </div>
-                <div class="container last">
+                <!-- <div class="container last">
                     <div class="title">
                         <h2>Under $10</h2>
                         <a href="#"><img src="img/top sellers arrow.png" alt="arrow icon"></a>
@@ -485,6 +490,7 @@
         const swiper1 = new Swiper('.myswiper1 .swiper-container', {
         // Optional parameters
         loop: true,
+        autoplay: { delay: 3000, },
 
         // If we need pagination
         pagination: {
@@ -524,6 +530,7 @@
             el: '.swiper-scrollbar',
             draggable: true,
             width: 3,
+            hide: true,
         },
         
         });

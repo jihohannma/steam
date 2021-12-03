@@ -15,7 +15,19 @@
 }
 
 .swiper-scrollbar.scrollbar-so {
-  height: 10px;
+  height: 16px;
   transform: scaleX(.5);
   background-image: linear-gradient(to bottom right, #46F6F6, #56CBFF);
+
+  .swiper-scrollbar-drag {
+    background: rgb(255, 255, 255);
+    height: 12px;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+  }
+}
+
+.swiper-scrollbar.scroll-mid {
+  display: none;
 }
