@@ -6,7 +6,7 @@ $gridgap: 4%;
     width: 100%;
     // max-width: 5000px;
     display: flex;
-    margin-left: -($gridgap / 2);
+    // margin-left: -($gridgap / 2);
     margin-right: -($gridgap / 2);
     justify-content: center;
     margin-bottom: 3em;
@@ -93,20 +93,13 @@ $gridgap: 4%;
           }
     }
 }
-
-
-// FOR NEW AND TRENDING DESIGN
-
-// .row-middle {
-//     width: 120%;
-//     max-width: 30000px;
-//     display: flex;
-//     margin-left: -($gridgap / 2);
-//     margin-right: -($gridgap / 2);
-//     justify-content: center;
-//     margin-bottom: 3em;
+// .title.black {
+//     max-width: 1000px;
+//     margin-left: auto;
+//     margin-right: auto;
 // }
 
+// FOR MID SECTION
 .column-new {
     padding: 2em;
     text-align: right;
@@ -177,18 +170,16 @@ $gridgap: 4%;
 #black {
     background-color: black;
 
-    // .popular {
-    //     display: grid;
-    //     grid-auto-flow: column;
-    // }
     h2 {
         color: white;
     }
-    .PU {
+    .column-long {
         background-color: white;
         padding: .5em;
         display: flex;
-        max-width: 980px;
+        width: 980px;
+        // margin-left: auto;
+        // margin-right: auto;
 
         .sidetext {
             padding-left: 1em;
@@ -202,8 +193,12 @@ $gridgap: 4%;
             }
         }
     }
-    .row {
+    .row.PU {
         width: 100%;
+        background-color: black;
+        > * {
+            margin: 0;
+        }
     }
     .last {
         margin-top: 8em;

@@ -31,3 +31,17 @@
 .swiper-scrollbar.scroll-mid {
   display: none;
 }
+
+.swiper-slide.bot {
+  background-color: black;
+  text-align: left;
+}
+
+.swiper-button-next.bot,
+.swiper-button-prev.bot {
+  position: absolute;
+  left: 1500px;
+  top: 3720px;
+  color: rgb(255, 0, 0);
+  z-index: 100;
+}
