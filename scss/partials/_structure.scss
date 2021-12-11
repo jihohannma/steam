@@ -56,8 +56,8 @@
 section {
     padding: 6em 0;
     // min-height: 100vh;
-    display: grid;
-    align-items: center;
+    // display: grid;
+    // align-items: center;
 }
 
 /* HERO SECTION */
@@ -73,6 +73,7 @@ section {
     padding: 0.5em 0;
     font-style: italic;
     text-align: center;
+    white-space: nowrap;
 }
     
 
@@ -88,23 +89,24 @@ section {
     min-height: 563px;
     display: flex;
     place-items: center;
+    position: relative;
 
     h1 {
         position: absolute;
-        font-size: 129px;
-        font-family: 'Condor Condensed';
+        font-size: 7vw;
+        font-family: $font-family-serif;
         font-style: italic;
         font-weight: 500;
     }
     .h1-1 {
-        top: 250px;
-        left: 50px;
+        top: 5%;
+        left: 3%;
         z-index: 1;
     }
     .h1-2 {
         color: $color-accent;
-        top: 250px;
-        left: 55px;
+        top: 5%;
+        left: 3.3%;
     }
     p {
         margin: 2em auto;
@@ -119,43 +121,54 @@ section {
         background: rgba(255, 153, 0, 0.562);
         display: inline-block;
         position: absolute;
-        font-size: 58px;
+        font-size: 3vw;
         color: rgba(255, 153, 0, 0);
         width: 100%;
-        top: 560px;
+        bottom: 21.5%;
     }
 
     // IMAGE
         .left {
             position: absolute;
-            right: 1200px;
-            top: 337px;
+            left: 15%;
+            bottom: 0;
+            @media (max-width: ($breakpoint-small - 1)) {
+                left: -20%;
+            }
         }
         .right {
             position: absolute;
-            left: 1200px;
-            top: 216px;
+            right: 12%;
+            bottom: 0;
+            @media (max-width: ($breakpoint-small - 1)) {
+                right: -20%;
+            }
         }
         .middle {
+            font-size: 3vw;
             color: white;
             position: absolute;
-            left: 800px;
-            top: 570px;
+            left: 42%;
+            top: 60.8%;
             z-index: 2;
         }
         .mid {
+            font-size: 3vw;
             color: $color-accent-light;
             position: absolute;
-            left: 803px;
-            top: 570px;
+            left: 42.3%;
+            top: 60.8%;
         }
 
-        .mid:before {
-            content: '';
-            width: 200px;
-            background-color: $color-link-darker;
-        }
+        // .mid:before {
+        //     content: '';
+        //     width: 200px;
+        //     background-color: $color-link-darker;
+        // }
     }
+    
+
+    
 
 
 

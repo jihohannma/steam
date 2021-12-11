@@ -9,13 +9,8 @@
     background: #fff;
   }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  display: none;
-}
-
 .swiper-scrollbar.scrollbar-so {
-  height: 16px;
+  height: 16px; 
   transform: scaleX(.5);
   background-image: linear-gradient(to bottom right, #46F6F6, #56CBFF);
 
@@ -37,11 +32,22 @@
   text-align: left;
 }
 
+.myswiper3 {
+  overflow: visible;
+}
+
 .swiper-button-next.bot,
 .swiper-button-prev.bot {
-  position: absolute;
-  left: 1500px;
-  top: 3720px;
   color: rgb(255, 0, 0);
-  z-index: 100;
+  top: -50px;
+}
+
+.swiper-button-prev.bot {
+  left: auto;
+  right: 28%;
+}
+
+.swiper-button-next.bot {
+  left: auto;
+  right: 25%;
 }

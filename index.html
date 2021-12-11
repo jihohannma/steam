@@ -21,13 +21,6 @@
 
 </head>
 
-<!-- <style>
-    .swiper-scrollbar {
-        background: linear-gradient(to bottom right, #46F6F6, #56CBFF);
-        height: 10px;
-        width: 50%;
-    }
-</style> -->
 
 <body>
 
@@ -399,7 +392,9 @@
                                 <div class="swiper-slide bot">
                                     <div class="row PU">
                                         <div class="column-long">
-                                            <img src="img/PU Astria Ascending-1.png" alt="Game image">
+                                            <div class="img-wrapper">
+                                                <img src="img/PU Astria Ascending-1.png" alt="Game image">
+                                             </div>
                                             <div class="sidetext">
                                                 <h3>Astria Ascending</h3>
                                                 <h4>October 1 2021</h4>
@@ -412,7 +407,9 @@
                                 <div class="swiper-slide bot">
                                     <div class="row PU">
                                         <div class="column-long">
-                                            <img src="img/PU Industria.png" alt="Game image">
+                                            <div class="img-wrapper">
+                                                <img src="img/PU Industria.png" alt="Game image">
+                                            </div>
                                             <div class="sidetext">
                                                 <h3>Industria</h3>
                                                 <h4>October 1 2021</h4>
@@ -425,7 +422,9 @@
                                 <div class="swiper-slide bot">
                                     <div class="row PU">
                                         <div class="column-long">
-                                            <img src="img/PU Astria Ascending-1.png" alt="Game image">
+                                            <div class="img-wrapper">
+                                                <img src="img/PU Astria Ascending-1.png" alt="Game image">
+                                            </div>
                                             <div class="sidetext">
                                                 <h3>Astria Ascending</h3>
                                                 <h4>October 1 2021</h4>
@@ -435,12 +434,12 @@
                                     </div>
                                 </div>
                             </div>
-                            
+                            <div class="swiper-button-next bot"></div>
+                            <div class="swiper-button-prev bot"></div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next bot"></div>
-                <div class="swiper-button-prev bot"></div>
+                
                 
                 <!-- <div class="container last">
                     <div class="title">
@@ -505,21 +504,13 @@
 
         const swiper1 = new Swiper('.myswiper1 .swiper-container', {
         // Optional parameters
-        loop: true,
+        // loop: true,
         autoplay: { delay: 3000, },
-
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-        },
 
         // And if we need scrollbar
         scrollbar: {
             el: '.swiper-scrollbar',
-            width: 3,
-            dragSize: 150,
-            // hide: true,
+            opacity: 1,
         },
         });
 
@@ -552,14 +543,6 @@
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-            draggable: true,
-            width: 3,
-            hide: true,
         },
         
         });
