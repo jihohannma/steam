@@ -32,7 +32,8 @@
   text-align: left;
 }
 
-.myswiper3 {
+.myswiper3,
+.myswiper4 {
   overflow: visible;
 }
 
@@ -40,14 +41,63 @@
 .swiper-button-prev.bot {
   color: rgb(255, 0, 0);
   top: -50px;
+  width: 50px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
 }
 
 .swiper-button-prev.bot {
+  background: url(../img/prev.png);
+  background-size: 89%;
+  background-repeat: no-repeat;
   left: auto;
   right: 28%;
 }
 
 .swiper-button-next.bot {
+  background: url(../img/next.png);
+  background-size: 89%;
+  background-repeat: no-repeat;
   left: auto;
   right: 25%;
+}
+
+// FOR UNDER $10
+.swiper-slide.last {
+  background: black;
+}
+
+.swiper-wrapper.last {
+  margin-left: 5.9em;
+}
+
+.swiper-button-next.bot.last,
+.swiper-button-prev.bot.last {
+  color: rgb(255, 0, 0);
+  top: -50px;
+  width: 50px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-prev.bot.last {
+  background: url(../img/prev.png);
+  background-size: 89%;
+  background-repeat: no-repeat;
+  left: auto;
+  right: 15.2%;
+}
+
+.swiper-button-next.bot.last {
+  background: url(../img/next.png);
+  background-size: 89%;
+  background-repeat: no-repeat;
+  left: auto;
+  right: 10.5%;
 }
