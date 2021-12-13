@@ -102,7 +102,7 @@ $gridgap: 4%;
 // FOR MID SECTION
 .column-new {
     padding: 2em;
-    text-align: right;
+    // text-align: right;
     margin-left: 0;
     margin-right: 0;
     width: 450px;
@@ -111,11 +111,13 @@ $gridgap: 4%;
         font-family: $font-family-sans;
         margin-top: 10px;
         font-size: 1.8em;
+        text-align: left;
     }
     p {
         font-family: $font-family-number;
         font-weight: bold;
         font-size: 1.3em;
+        text-align: right;
     }
     .line {
         font-family: $font-family-number;
@@ -124,6 +126,14 @@ $gridgap: 4%;
         text-decoration: line-through;
         margin-top: 1em;
         margin-right: .5em;
+    }
+    .line.zero {
+        opacity: 0%;
+        font-size: .55em;
+    }
+    .line.zero.two {
+        opacity: 0%;
+        font-size: 1.3em;
     }
     .insidecolumn {
         display: flex;
@@ -236,6 +246,9 @@ $gridgap: 4%;
                     padding-top: .5em;
                 } 
             } 
+            .rate.none {
+                justify-content: flex-end;
+            }
         }
     }
 }

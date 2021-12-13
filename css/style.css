@@ -366,7 +366,6 @@ body {
 
 .column-new {
   padding: 2em;
-  text-align: right;
   margin-left: 0;
   margin-right: 0;
   width: 450px;
@@ -375,11 +374,13 @@ body {
   font-family: "Proxima Nova", Helvetica, Arial, Helvetica, sans-serif;
   margin-top: 10px;
   font-size: 1.8em;
+  text-align: left;
 }
 .column-new p {
   font-family: "Nimbus Sans", Helvetica, Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1.3em;
+  text-align: right;
 }
 .column-new .line {
   font-family: "Nimbus Sans", Helvetica, Arial, Helvetica, sans-serif;
@@ -388,6 +389,14 @@ body {
   text-decoration: line-through;
   margin-top: 1em;
   margin-right: 0.5em;
+}
+.column-new .line.zero {
+  opacity: 0%;
+  font-size: 0.55em;
+}
+.column-new .line.zero.two {
+  opacity: 0%;
+  font-size: 1.3em;
 }
 .column-new .insidecolumn {
   display: -webkit-box;
@@ -503,6 +512,11 @@ body {
   text-decoration: line-through;
   font-size: 1.2em;
   padding-top: 0.5em;
+}
+#black .last .column-last .rate.none {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .demo .row {
